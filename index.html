@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style type="text/css">
+        body { margin-left:50px; margin-right:50px; margin-top:100px; margin-bottom:100px }
+        </style>
+    <h1>
+        <font color =#98a5d5>
+        Welcome to the DIY-Data Analysis Tool.
+        </font>
+    </h1>
+    <h3>
+        Below you see some fictional passenger data of the Titanic. 
+        Feel free to filter or modify the table and add your own calculations in the green fields at the end of the table.
+    </h3>
+
+    <h3>DataBot, a chatbot for data analysis is here to help you, if you need assistance. You can find it in the lower-right corner.
+    </h3>
+        </head>
+    <body>
+        <style>
+            .rw-conversation-container .rw-header{background-color: #98a5d5;} 
+            .rw-widget-container button.rw-launcher{background-color: #98a5d5;} 
+            .rw-messages-container .rw-message .rw-client{background-color: #f7bec0}
+        </style>
+        <script>!(function () {
+            let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+            // Replace 1.x.x with the version that you want
+            (e.async = !0),
+            (e.onload = () => {
+                window.WebChat.default(
+                {   initPayload: '/greet',
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'DataBot',
+                    subtitle: "I'm here to help you with your analysis."
+                    // add other props here
+                },
+                null
+                );
+            }),
+            t.insertBefore(e, t.firstChild);
+        })();
+        </script>
+
+    <iframe style="height: 100%; width: 100%" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=DDF51F8E27C455F0%21196&authkey=%21AICJMJPPumRM8s4&em=2&AllowTyping=True&Item=Tabelle136&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&edrtees6=false&resen=false"></iframe>
+    </body>
+</html>
